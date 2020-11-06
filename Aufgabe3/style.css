@@ -1,4 +1,9 @@
-body {background-image: url("./medienwp/bg.png")
+body {font-family: sans-serif;
+    background-image: url("./medienwp/bg.png")
+    
 }
+header {font-family: sans-serif;}
 img {width: 800px;
+}
+video {width: 800px;
 }
