@@ -8,7 +8,7 @@ header {font-family: sans-serif;}
     border-radius: 50%;
     height: 1000px;
     width: 1000px;
-     margin-top: -700px;
+     margin-top: -650px;
      display: block;
      margin-left: 500px;
      opacity: 70%;
@@ -19,7 +19,7 @@ header {font-family: sans-serif;}
     font-size: 150%;
     text-align: left;
     width: 300px;
-    margin-left: 480px;
+    margin-left: 380px;
     margin-right: auto;
 }
 
