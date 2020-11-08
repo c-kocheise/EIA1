@@ -1,18 +1,4 @@
 body {font-family: sans-serif;
-    background-image: url("./medienwp/bg.png")
-    
+    background-image: url("./medienwp/bg.png")    
 }
 header {font-family: sans-serif;}
-img {width: 800px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-video {width: 800px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.div1 {
-}
