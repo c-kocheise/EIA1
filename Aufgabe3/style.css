@@ -10,7 +10,8 @@ header {font-family: sans-serif;}
     width: 1000px;
      margin-top: -700px;
      display: block;
-     margin-left: 635px;
+     margin-left: 500px;
+     opacity: 70%;
  }
  
  .kreistext .untertext{
@@ -32,3 +33,10 @@ header {font-family: sans-serif;}
 .navbar2:hover {
     opacity: 100%;
 }
+
+h1 {
+    color: rgb(255, 255, 255);
+    margin-top: 70px;
+    text-align: center;
+    padding-top: 700px;
+    font-size: 90px
