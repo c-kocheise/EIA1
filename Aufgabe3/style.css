@@ -49,13 +49,33 @@ h1 {
     height: auto;
 }
 
-.navbar2 {
-    top: 100%;
-    margin-top:14px;
-    text-align: center;
-    opacity: 0.5;
-    }
+.navbar1 {
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 10px;
+    padding: 10px;
+    right: 10px;
+    border-radius: 10px;
+}
 
-.navbar2:hover {
-    opacity: 100%;
+.navbar1 .aktiv{
+    background-color: grey;
+    color: red;
+}
+
+.navbar1 a:hover {
+    background: black;
+    color: rgb(155, 36, 36);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    float: right;
 }
