@@ -1,2 +1,13 @@
-body {background-image: url("/Aufgabe4/Station1/media1/bg1.png");
+body{
+    background-image: url(media1/bg1.png);   
+    height: 950px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Karten Layout*/
+.karte{
+    display: block;
+    position: relative;
 }
