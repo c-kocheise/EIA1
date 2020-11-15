@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url("/Aufgabe4/Station1/media1/bg1.png");
+    background-image: url("./media7/bg7.png");
     display: flex;
     align-items: center;
     justify-content: center;
