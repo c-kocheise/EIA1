@@ -1,13 +1,11 @@
-body{
-    background-image: url(media1/bg1.png);   
-    height: 950px;
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("media1/bg1.png");
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/*Karten Layout*/
-.karte{
-    display: block;
-    position: relative;
+    height: 100%;
 }
