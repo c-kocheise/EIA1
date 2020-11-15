@@ -8,6 +8,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
+    font-family: sans-serif;
 }
 .containerKarte {
     position: relative;
@@ -15,3 +16,19 @@ body {
     height: 400px;
     background: url(wrapperbg5.png);
     }
+
+.h2{
+    font-size: 97%;
+}
+
+.formular {
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    }
+    
+.textfeld {
+    width: 280px;
+    height: 80px;
+    }   
