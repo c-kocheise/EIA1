@@ -1,0 +1,33 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("media8/bg8.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.containerKarte {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: url(wrapperbg.png);
+    }
+
+.youtube {
+    position: absolute;
+    width: 530px;
+    height: 315px;
+    top: 40px;
+    left: 20px;
+}
+
+.banderole {
+    position: absolute;
+    width: 227px;
+    height: 122px;
+    top: 270px;
+    left: 370px;
+}
