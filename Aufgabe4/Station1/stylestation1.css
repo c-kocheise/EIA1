@@ -9,3 +9,35 @@ body {
     justify-content: center;
     height: 100%;
 }
+.containerKarte {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: url(wrapperbg.png);
+    }
+
+.h1 {
+    position: absolute;
+    color: white;
+    top: 0px;
+    left: 30px;
+
+}
+
+.containerBusch{
+    position: absolute;
+    background: url(busch.png);
+    width: 222px;
+    height: 179px;
+    top: 0px;
+    left: 0px; 
+    
+}
+.containerPinguin{
+    position: absolute;
+    background: url(pinguin.png);
+    width: 144px;
+    height: 193px;
+    top: 100px;
+    left: 100px;
+}
