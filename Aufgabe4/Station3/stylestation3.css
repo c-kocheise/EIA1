@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-image: url("/Aufgabe4/Station5/media5/bg5.png");
+    background-image: url("./media3/bg3.png");
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,3 +15,39 @@ body {
     height: 400px;
     background: url(wrapperbg5.png);
     }
+
+.stern1{
+    position: absolute;
+    top: 50px;
+    left: 100px;
+}
+    
+.stern2{
+    position: absolute;
+    top: 120px;
+    left: 200px;
+}
+
+.stern3{
+    position: absolute;
+    top: 70px;
+    left: 320px;
+}
+
+.stern4{
+    position: absolute;
+    top: 290px;
+    left: 450px;
+}
+
+.h1{font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    color: white;
+    top: 220px;
+    left: 110px;
+}
+
+.stern1:hover, .stern2:hover, .stern3:hover, .stern4:hover{
+background-image: url(/Aufgabe4/Station3/media3/stern_hover.png);
+}
+
