@@ -40,14 +40,13 @@ body {
     left: 450px;
 }
 
+.stern1:hover, .stern2:hover, .stern3:hover, .stern4:hover{
+    background-image: url(/Aufgabe4/Station3/media3/stern_hover.png);
+    }
+
 .h1{font-family: 'Times New Roman', Times, serif;
     position: absolute;
     color: white;
     top: 220px;
     left: 110px;
 }
-
-.stern1:hover, .stern2:hover, .stern3:hover, .stern4:hover{
-background-image: url(/Aufgabe4/Station3/media3/stern_hover.png);
-}
-
