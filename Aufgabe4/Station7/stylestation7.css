@@ -50,6 +50,13 @@ body {
     left: 180px; 
 }
 
+.stern1{
+    position: absolute;
+    background: url(stern.gif);
+    top: 280px;
+    left: 300px; 
+}
+
 h1 {
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
