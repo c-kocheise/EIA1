@@ -20,28 +20,33 @@ body {
     position: absolute;
     top: 50px;
     left: 100px;
+    background-repeat: no-repeat;
 }
     
 .stern2{
     position: absolute;
     top: 120px;
     left: 200px;
+    background-repeat: no-repeat;
 }
 
 .stern3{
     position: absolute;
     top: 70px;
     left: 320px;
+    background-repeat: no-repeat;
 }
 
 .stern4{
     position: absolute;
     top: 290px;
     left: 450px;
+    background-repeat: no-repeat;
 }
 
 .stern1:hover, .stern2:hover, .stern3:hover, .stern4:hover{
     background-image: url(/Aufgabe4/Station3/media3/stern_hover.png);
+    background-repeat: no-repeat;
 }
 
 .h1{font-family: 'Times New Roman', Times, serif;
