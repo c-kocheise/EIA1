@@ -45,7 +45,7 @@ body {
 }
 
 .stern1:hover, .stern2:hover, .stern3:hover, .stern4:hover{
-    background-image: url(/Aufgabe4/Station3/media3/stern_hover.png);
+    background-image: url(./media3/stern_hover.png);
     background-repeat: no-repeat;
 }
 
