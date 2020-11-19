@@ -52,7 +52,7 @@ const zuNAmericaP: number = (100 - (nAmerica2008 / nAmerica2018 *100)).toFixed(1
 const zuNAmericaZ: number = (nAmerica2018 - nAmerica2008).toFixed(1);
 
 //relAsien
-const relAsia: number = (asia2018 / weltweit2018 *100).toFixed(1);.toFixed(1)
+const relAsia: number = (asia2018 / weltweit2018 *100).toFixed(1);
 const zuAsiaP: number = (100 - (asia2008 / asia2018 *100)).toFixed(1);
 const zuAsiaZ: number = (asia2018 - asia2008).toFixed(1);
 
@@ -61,3 +61,7 @@ const relAustralia: number = (australia2018 / weltweit2018 *100).toFixed(1);
 const zuAustraliaP: number = (100 - (australia2008 / australia2018 *100)).toFixed(1);
 const zuAustraliaZ: number = (australia2018 - australia2008).toFixed(1);
 
+
+//Console
+console.log ('Emissionswerte Afrika');
+console.log ('Die Emission von Arfika in 2018 ist' +const africa2018 +'kg');
