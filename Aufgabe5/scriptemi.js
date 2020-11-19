@@ -47,8 +47,5 @@ var zuAustraliaP = (100 - (australia2008 / australia2018 * 100)).toFixed(1);
 var zuAustraliaZ = (australia2018 - australia2008).toFixed(1);
 //Console
 console.log('Emissionswerte Afrika');
-console.log('Die Emission von Arfika in 2018 ist: ' + );
-var africa2018;
-+'kg';
-;
+console.log('Die Emission von Arfika in 2018 ist: ' + africa2018 + 'kg CO2');
 //# sourceMappingURL=scriptemi.js.map

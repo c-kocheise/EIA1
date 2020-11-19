@@ -64,4 +64,4 @@ const zuAustraliaZ: number = (australia2018 - australia2008).toFixed(1);
 
 //Console
 console.log ('Emissionswerte Afrika');
-console.log ('Die Emission von Arfika in 2018 ist: ' +const africa2018 +'kg');
+console.log ('Die Emission von Arfika in 2018 ist: ' + africa2018 +'kg CO2');
