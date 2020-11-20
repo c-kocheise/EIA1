@@ -65,3 +65,6 @@ const zuAustraliaZ: number = (australia2018 - australia2008).toFixed(1);
 //Console
 console.log ('Emissionswerte Afrika');
 console.log ('Die Emission von Arfika in 2018 ist: ' + africa2018 +'kg CO2');
+console.log ('Relativ zur Gesamtemission der Welt verursacht Afrika damit ' + relAfrica +'%');
+console.log ('Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um' + zuAfricaP +'% verändert.');
+console.log ('2018 im Vergleich zu 2008 sind das ' +zuAfricaZ +'kg CO2');
