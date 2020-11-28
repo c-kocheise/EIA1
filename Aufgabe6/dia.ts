@@ -79,11 +79,13 @@ function Funktionsname (kontinent: string, kontinent2018: number, kontinent2008:
 }
 
 
-Funktionsname ("Africa", africa2018, africa2008)
 
-window.addEventListener('load', function() {
-    document.querySelector(".europe").addEventListener('click', Funktionsname);
+querySelector ("Africa", africa2018, africa2008)
+
+window.addEventListener('load', function() {
+    document.querySelector(".europe").addEventListener('click', querySelector);
 });
+
 
 
 
