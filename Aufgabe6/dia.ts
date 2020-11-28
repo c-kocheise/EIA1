@@ -62,6 +62,49 @@ const zuAustraliaP: number = (100 - (australia2008 / australia2018 *100));
 const zuAustraliaZ: number = (australia2018 - australia2008);
 
 
+
+
+
+
+
+function Funktionsname (kontinent: string, kontinent2018: number, kontinent2008: number) {
+
+    document.querySelector(".titleRegion").innerHTML = kontinent;
+    document.querySelector(".titleRegion2").innerHTML = kontinent;
+    document.querySelector("#absoluteEmi").innerHTML = kontinent2018.toFixed(2) + " CO2 kg";
+    document.querySelector("#totalEmi").innerHTML = (kontinent2018 / weltweit2018 * 100);
+    document.querySelector("#growthPerEmi").innerHTML = (100 - (kontinent2008 / kontinent2018 *100));
+    document.querySelector("#growthAbsEmi").innerHTML = (kontinent2018 - kontinent2008);
+    document.querySelector('.chart').setAttribute('style', 'height:' + (100 / (gesEmission / kontinent2018)).toFixed(2) + "%" );
+}
+
+
+Funktionsname ("Africa", africa2018, africa2008)
+
+window.addEventListener('load', function() {
+    document.querySelector(".europe").addEventListener('click', Funktionsname);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Console
 console.log ('Emissionswerte Afrika');
 console.log ('Die Emission von Arfika in 2018 ist: ' + africa2018 +'kg CO2');
