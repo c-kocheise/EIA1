@@ -72,14 +72,26 @@ function myFunction(name: string, value18: number, valueRel: number, valueChange
     document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in " + name;
     document.querySelector(".h2_01").innerHTML = value18.toString() ; 
     document.querySelector("p").innerHTML = "Emission absolute of " + name + " in 2018";
-    document.querySelector(".h2_02").innerHTML =  Math.round(value18/total*100)  + "%";
+    document.querySelector(".h2_02").innerHTML =  Math.round(value18/weltweit2018*100)  + "%";
     document.querySelector(".h2_03").innerHTML =  valueChange + "%";
     document.querySelector(".h2_04").innerHTML =  valueGrowth + "kg CO2"
 
-    document.querySelector(".chart").setAttribute( 'style', 'height:' + Math.round(value18/total*100) + "%")
+    document.querySelector(".chart").setAttribute( 'style', 'height:' + Math.round(value18/weltweit2018*100) + "%")
 }
 
 
+document.querySelector(".europe").addEventListener("click", myFunction.bind( null,"Europe", europe2018, relEurope, zuEuropeP, zuEuropeZ));
+
+
+document.querySelector(".northamerica").addEventListener("click", myFunction.bind(null, "North America", nAmerica2018, relNAmerica, zuNAmericaP, zuNAmericaZ));
+
+document.querySelector(".southamerica").addEventListener("click", myFunction.bind(null, "South America", sAmerica2018, relSAmerica, zuSAmericaP, zuSAmericaZ));
+
+document.querySelector(".africa").addEventListener("click", myFunction.bind(null, "Africa", africa2018, relAfrica, zuAfricaP, zuAfricaZ));
+
+document.querySelector(".asia").addEventListener("click", myFunction.bind(null, "Asia", asia2018, relAsia, zuAsiaP, zuAsiaZ));
+
+document.querySelector(".australia").addEventListener("click", myFunction.bind(null, "Australia", australia2018, relAustralia, zuAustraliaP, zuAustraliaZ));
 
 
 
