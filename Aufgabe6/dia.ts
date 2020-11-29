@@ -64,8 +64,7 @@ const zuAustraliaZ: number = (australia2018 - australia2008);
 
 
 
-
-
+//Funktionen
 
 function myFunction(name: string, value18: number, valueRel: number, valueChange: number, valueGrowth: number ){
 
@@ -76,9 +75,14 @@ function myFunction(name: string, value18: number, valueRel: number, valueChange
     document.querySelector(".h2_3").innerHTML =  `${Math.round(valueChange)}%`;
     document.querySelector(".h2_4").innerHTML =  valueGrowth + "kg CO2"
 
+    //Diagramm
     document.querySelector(".chart").setAttribute( 'style', 'height:' + Math.round(value18/weltweit2018*100) + "%")
 }
 
+
+
+
+//Events
 
 document.querySelector(".europe").addEventListener("click", myFunction.bind( null,"Europe", europe2018, relEurope, zuEuropeP, zuEuropeZ));
 

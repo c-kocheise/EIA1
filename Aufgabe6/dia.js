@@ -45,6 +45,7 @@ var zuAsiaZ = (asia2018 - asia2008);
 var relAustralia = (australia2018 / weltweit2018 * 100);
 var zuAustraliaP = (100 - (australia2008 / australia2018 * 100));
 var zuAustraliaZ = (australia2018 - australia2008);
+//Funktionen
 function myFunction(name, value18, valueRel, valueChange, valueGrowth) {
     document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in " + name;
     document.querySelector(".h2_1").innerHTML = value18.toString() + "kg CO2";
@@ -52,8 +53,10 @@ function myFunction(name, value18, valueRel, valueChange, valueGrowth) {
     document.querySelector(".h2_2").innerHTML = Math.round(value18 / weltweit2018 * 100) + "%";
     document.querySelector(".h2_3").innerHTML = Math.round(valueChange) + "%";
     document.querySelector(".h2_4").innerHTML = valueGrowth + "kg CO2";
+    //Diagramm
     document.querySelector(".chart").setAttribute('style', 'height:' + Math.round(value18 / weltweit2018 * 100) + "%");
 }
+//Events
 document.querySelector(".europe").addEventListener("click", myFunction.bind(null, "Europe", europe2018, relEurope, zuEuropeP, zuEuropeZ));
 document.querySelector(".northamerica").addEventListener("click", myFunction.bind(null, "North America", nAmerica2018, relNAmerica, zuNAmericaP, zuNAmericaZ));
 document.querySelector(".southamerica").addEventListener("click", myFunction.bind(null, "South America", sAmerica2018, relSAmerica, zuSAmericaP, zuSAmericaZ));
