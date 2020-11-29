@@ -67,24 +67,20 @@ const zuAustraliaZ: number = (australia2018 - australia2008);
 
 
 
-function Funktionsname (kontinent: string, kontinent2018: number, kontinent2008: number) {
+function myFunction(name: string, value18: number, valueRel: number, valueChange: number, valueGrowth: number ){
 
-    document.querySelector(".titleRegion").innerHTML = kontinent;
-    document.querySelector(".titleRegion2").innerHTML = kontinent;
-    document.querySelector("#absoluteEmi").innerHTML = kontinent2018.toFixed(2) + " CO2 kg";
-    document.querySelector("#totalEmi").innerHTML = (kontinent2018 / weltweit2018 * 100);
-    document.querySelector("#growthPerEmi").innerHTML = (100 - (kontinent2008 / kontinent2018 *100));
-    document.querySelector("#growthAbsEmi").innerHTML = (kontinent2018 - kontinent2008);
-    document.querySelector('.chart').setAttribute('style', 'height:' + (100 / (gesEmission / kontinent2018)).toFixed(2) + "%" );
+    document.querySelector("h1").innerHTML = "Carbon Dioxide Emissions in " + name;
+    document.querySelector(".h2_01").innerHTML = value18.toString() ; 
+    document.querySelector("p").innerHTML = "Emission absolute of " + name + " in 2018";
+    document.querySelector(".h2_02").innerHTML =  Math.round(value18/total*100)  + "%";
+    document.querySelector(".h2_03").innerHTML =  valueChange + "%";
+    document.querySelector(".h2_04").innerHTML =  valueGrowth + "kg CO2"
+
+   
 }
 
 
 
-querySelector ("Africa", africa2018, africa2008)
-
-window.addEventListener('load', function() {
-    document.querySelector(".europe").addEventListener('click', querySelector);
-});
 
 
 
@@ -101,45 +97,3 @@ window.addEventListener('load', function() {
 
 
 
-
-
-
-
-
-
-//Console
-console.log ('Emissionswerte Afrika');
-console.log ('Die Emission von Arfika in 2018 ist: ' + africa2018 +'kg CO2');
-console.log ('Relativ zur Gesamtemission der Welt verursacht Afrika damit ' + relAfrica.toFixed(1) +'%');
-console.log ('Für Afrika hat sich 2018 im Vergleich zu 2008 die Emission um ' + zuAfricaP.toFixed(1) +'% verändert.');
-console.log ('2018 im Vergleich zu 2008 sind das ' +zuAfricaZ.toFixed(1) +'kg CO2');
-
-console.log ('Emissionswerte Südamerika');
-console.log ('Die Emission von Südamerika in 2018 ist: ' + sAmerica2018 +'kg CO2');
-console.log ('Relativ zur Gesamtemission der Welt verursacht Südamerika damit ' + relSAmerica.toFixed(1) +'%');
-console.log ('Für Südamerika hat sich 2018 im Vergleich zu 2008 die Emission um ' + zuSAmericaP.toFixed(1) +'% verändert.');
-console.log ('2018 im Vergleich zu 2008 sind das ' +zuSAmericaZ.toFixed(1) +'kg CO2');
-
-console.log ('Emissionswerte Europa');
-console.log ('Die Emission von Europa in 2018 ist: ' + europe2018 +'kg CO2');
-console.log ('Relativ zur Gesamtemission der Welt verursacht Europa damit ' + relEurope.toFixed(1) +'%');
-console.log ('Für Europa hat sich 2018 im Vergleich zu 2008 die Emission um ' + zuEuropeP.toFixed(1) +'% verändert.');
-console.log ('2018 im Vergleich zu 2008 sind das ' +zuEuropeZ.toFixed(1) +'kg CO2');
-
-console.log ('Emissionswerte Nordamerika');
-console.log ('Die Emission von Nordamerika in 2018 ist: ' + nAmerica2018 +'kg CO2');
-console.log ('Relativ zur Gesamtemission der Welt verursacht Nordamerika damit ' + relNAmerica.toFixed(1) +'%');
-console.log ('Für Nordamerika hat sich 2018 im Vergleich zu 2008 die Emission um ' + zuNAmericaP.toFixed(1) +'% verändert.');
-console.log ('2018 im Vergleich zu 2008 sind das ' +zuNAmericaZ.toFixed(1) +'kg CO2');
-
-console.log ('Emissionswerte Asien');
-console.log ('Die Emission von Asien in 2018 ist: ' + asia2018 +'kg CO2');
-console.log ('Relativ zur Gesamtemission der Welt verursacht Asien damit ' + relAsia.toFixed(1) +'%');
-console.log ('Für Asien hat sich 2018 im Vergleich zu 2008 die Emission um ' + zuAsiaP.toFixed(1) +'% verändert.');
-console.log ('2018 im Vergleich zu 2008 sind das ' +zuAsiaZ.toFixed(1) +'kg CO2');
-
-console.log ('Emissionswerte Australien');
-console.log ('Die Emission von Australien in 2018 ist: ' + australia2018 +'kg CO2');
-console.log ('Relativ zur Gesamtemission der Welt verursacht Australien damit ' + relAustralia.toFixed(1) +'%');
-console.log ('Für Australien hat sich 2018 im Vergleich zu 2008 die Emission um ' + zuAustraliaP.toFixed(1) +'% verändert.');
-console.log ('2018 im Vergleich zu 2008 sind das ' +zuAustraliaZ.toFixed(1) +'kg CO2');
