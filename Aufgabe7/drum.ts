@@ -12,6 +12,7 @@
     drumPad[8] = new Audio('drummedia/snare.mp3');
 
 
+    
 //Eventlistener
 
     document.querySelector(".sound1").addEventListener("click", function(){
@@ -58,8 +59,21 @@
         drumPad[i].play();
     };
 
+
+
 //Eventlistener PlayButton
 
     document.querySelector(".playButton").addEventListener("click", function(){
     playButton();
     });
+
+
+
+//Funktion Playbutton
+function playButton(){
+    setInterval(function() {
+        drumPad[8].play();
+        drumPad[4].play();
+        drumPad[5].play();
+    }, 500);
+};
