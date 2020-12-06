@@ -49,3 +49,11 @@
     document.querySelector(".sound9").addEventListener("click", function(){
         playSample(8);
         });
+
+
+        
+// Funktion für DrumPads
+
+    function playSample(i :number){
+        drumPad[i].play();
+    };
