@@ -51,9 +51,15 @@
         });
 
 
-        
-// Funktion für DrumPads
+
+//Funktion für DrumPads
 
     function playSample(i :number){
         drumPad[i].play();
     };
+
+//Eventlistener PlayButton
+
+    document.querySelector(".playButton").addEventListener("click", function(){
+    playButton();
+    });
