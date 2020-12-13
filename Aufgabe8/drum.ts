@@ -64,7 +64,7 @@
 
 //Funktion für DrumPads
 
-    function playSample(i :number){
+    function playSample(i :number): void {
         drumPad[i].play();
     };
 
@@ -72,9 +72,11 @@
 
 //Eventlistener PlayButton
 
-    document.querySelector(".playButton").addEventListener("click", function(){
-    playButton();
-    });
+playButton.addEventListener("click", () => {
+    playSchleife(true);
+    playButton.classList.add("inactive");
+    pauseButton.classList.remove("inactive"); 
+});
 
 
 
