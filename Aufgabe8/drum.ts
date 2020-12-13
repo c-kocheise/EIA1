@@ -69,40 +69,41 @@
     }
 
 
-   //Variabeln Aufnehmen und Löschen
+//Variabeln Aufnehmen und Löschen
    
-   let trash: HTMLElement = document.querySelector(".fa-trash-alt");
-   let recbutton: HTMLElement = document.querySelector(".fa-microphone");
-   
-   let beat: number [] = [];
-   let abfrage: boolean;
+    let trash: HTMLElement = document.querySelector(".fa-trash-alt");
+    let recbutton: HTMLElement = document.querySelector(".fa-microphone");
+
+    let beat: number [] = [];
+    let abfrage: boolean;
    
 
-   // Funktion & Variablen Abspielen und Pause
+// Funktion & Variablen Abspielen und Pause
    
-   let playButton: HTMLElement = document.querySelector(".fa-play");
-   let pauseButton: HTMLElement = document.querySelector(".fa-stop");
+    let playButton: HTMLElement = document.querySelector(".fa-play");
+    let pauseButton: HTMLElement = document.querySelector(".fa-stop");
    
-   let myInterval: number;    
-   let x: number = 0;
+    let myInterval: number;    
+    let x: number = 0;
 
 
 //Eventlistener PlayButton, PauseButton
 
-playButton.addEventListener("click", () => {
+    playButton.addEventListener("click", () => {
     playSchleife(true);
     playButton.classList.add("inactive");
     pauseButton.classList.remove("inactive"); 
 });
 
-pauseButton.addEventListener("click", () => {
+    pauseButton.addEventListener("click", () => {
     playSchleife(false);
     pauseButton.classList.add("inactive");
     playButton.classList.remove("inactive");
 });
 
-     //Eventlistener Aufnehmen und Löschen
-     recbutton.addEventListener("click", () => {
+
+//Eventlistener Aufnehmen und Löschen
+    recbutton.addEventListener("click", () => {
         if (recbutton.classList.contains("active")) {
             recbutton.classList.remove("active");
             abfrage = false;
@@ -119,7 +120,7 @@ pauseButton.addEventListener("click", () => {
     
 
 //Aufnahme
-function recbeat (i: number): void   {
+    function recbeat (i: number): void   {
     if (abfrage == true) {
         beat.push(i);
     }
