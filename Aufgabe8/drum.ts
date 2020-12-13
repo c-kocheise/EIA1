@@ -17,38 +17,47 @@
 
     document.querySelector(".sound1").addEventListener("click", function(){
         playSample(0);
+        recbeat(0);
         });
 
     document.querySelector(".sound2").addEventListener("click", function(){
         playSample(1);
+        recbeat(1);
         });
 
     document.querySelector(".sound3").addEventListener("click", function(){
         playSample(2);
+        recbeat(2);
         });
         
     document.querySelector(".sound4").addEventListener("click", function(){
         playSample(3);
+        recbeat(3);
         });
 
     document.querySelector(".sound5").addEventListener("click", function(){
         playSample(4);
+        recbeat(4);
         });
 
     document.querySelector(".sound6").addEventListener("click", function(){
         playSample(5);
+        recbeat(5);
         });
 
     document.querySelector(".sound7").addEventListener("click", function(){
         playSample(6);
+        recbeat(6);
         });
 
     document.querySelector(".sound8").addEventListener("click", function(){
         playSample(7);
+        recbeat(7);
         });
 
     document.querySelector(".sound9").addEventListener("click", function(){
         playSample(8);
+        recbeat(8);
         });
 
 
@@ -69,12 +78,9 @@
 
 
 
-//Funktion Playbutton
-
-function playButton(){
-    setInterval(function() {
-        drumPad[8].play();
-        drumPad[4].play();
-        drumPad[5].play();
-    }, 500);
-};
+//Aufnahme
+function recbeat (i: number): void   {
+    if (abfrage == true) {
+        beat.push(i);
+    }
+}
