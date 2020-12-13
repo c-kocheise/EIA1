@@ -108,4 +108,4 @@ function playSchleife(b) {
         clearInterval(myInterval);
     }
 }
-//# sourceMappingURL=drum.js.map
+//# sourceMappingURL=drum2.js.map
