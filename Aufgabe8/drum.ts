@@ -70,12 +70,18 @@
 
 
 
-//Eventlistener PlayButton
+//Eventlistener PlayButton, PauseButton
 
 playButton.addEventListener("click", () => {
     playSchleife(true);
     playButton.classList.add("inactive");
     pauseButton.classList.remove("inactive"); 
+});
+
+pauseButton.addEventListener("click", () => {
+    playSchleife(false);
+    pauseButton.classList.add("inactive");
+    playButton.classList.remove("inactive");
 });
 
 
