@@ -47,8 +47,7 @@ body{
     cursor: pointer;
 
 }
-.fa-play {
-    color: #ffffee;
+.fa-play, .fa-pause{
     position: absolute;
     left:0;
     height: 0;   
@@ -59,15 +58,6 @@ body{
     color: #0e54a5;
     font-size: 40px;
 }
-
-
-.fa-pause{
-    color: lightcoral;
-    position: absolute;
-    left: 0;
-    height: 0;   
-}
-
 
 .active{
     color: #ffffee;
