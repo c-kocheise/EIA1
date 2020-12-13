@@ -15,47 +15,47 @@
 
 //Eventlistener
 
-    document.querySelector(".sound1").addEventListener("click", function(){
+    document.querySelector(".sound1").addEventListener("click", function(): void {
         playSample(0);
         recbeat(0);
         });
 
-    document.querySelector(".sound2").addEventListener("click", function(){
+    document.querySelector(".sound2").addEventListener("click", function(): void {
         playSample(1);
         recbeat(1);
         });
 
-    document.querySelector(".sound3").addEventListener("click", function(){
+    document.querySelector(".sound3").addEventListener("click", function(): void {
         playSample(2);
         recbeat(2);
         });
         
-    document.querySelector(".sound4").addEventListener("click", function(){
+    document.querySelector(".sound4").addEventListener("click", function(): void {
         playSample(3);
         recbeat(3);
         });
 
-    document.querySelector(".sound5").addEventListener("click", function(){
+    document.querySelector(".sound5").addEventListener("click", function(): void {
         playSample(4);
         recbeat(4);
         });
 
-    document.querySelector(".sound6").addEventListener("click", function(){
+    document.querySelector(".sound6").addEventListener("click", function(): void {
         playSample(5);
         recbeat(5);
         });
 
-    document.querySelector(".sound7").addEventListener("click", function(){
+    document.querySelector(".sound7").addEventListener("click", function(): void {
         playSample(6);
         recbeat(6);
         });
 
-    document.querySelector(".sound8").addEventListener("click", function(){
+    document.querySelector(".sound8").addEventListener("click", function(): void {
         playSample(7);
         recbeat(7);
         });
 
-    document.querySelector(".sound9").addEventListener("click", function(){
+    document.querySelector(".sound9").addEventListener("click", function(): void {
         playSample(8);
         recbeat(8);
         });
