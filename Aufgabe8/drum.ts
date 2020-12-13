@@ -64,10 +64,26 @@
 
 //Funktion für DrumPads
 
-    function playSample(i :number): void {
+    function playSample(i: number): void {
         drumPad[i].play();
-    };
+    }
 
+
+   //Variabeln Aufnehmen und Löschen
+   let trash: HTMLElement = document.querySelector(".fa-trash-alt");
+   let recbutton: HTMLElement = document.querySelector(".fa-microphone");
+   
+   let beat: number [] = [];
+   let abfrage: boolean;
+   
+   
+   // Funktion & Variablen Abspielen und Pause
+   
+   let playButton: HTMLElement = document.querySelector(".fa-play");
+   let pauseButton: HTMLElement = document.querySelector(".fa-stop");
+   
+   let myInterval: number;    
+   let x: number = 0;
 
 
 //Eventlistener PlayButton, PauseButton

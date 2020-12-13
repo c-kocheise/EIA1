@@ -50,7 +50,16 @@ document.querySelector(".sound9").addEventListener("click", function () {
 function playSample(i) {
     drumPad[i].play();
 }
-;
+//Variabeln Aufnehmen und Löschen
+var trash = document.querySelector(".fa-trash-alt");
+var recbutton = document.querySelector(".fa-microphone");
+var beat = [];
+var abfrage;
+// Funktion & Variablen Abspielen und Pause
+var playButton = document.querySelector(".fa-play");
+var pauseButton = document.querySelector(".fa-stop");
+var myInterval;
+var x = 0;
 //Eventlistener PlayButton, PauseButton
 playButton.addEventListener("click", function () {
     playSchleife(true);
