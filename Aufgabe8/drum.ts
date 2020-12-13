@@ -84,6 +84,17 @@ pauseButton.addEventListener("click", () => {
     playButton.classList.remove("inactive");
 });
 
+     //Eventlistener Aufnehmen und Löschen
+     recbutton.addEventListener("click", () => {
+        if (recbutton.classList.contains("active")) {
+            recbutton.classList.remove("active");
+            abfrage = false;
+        }
+        else {
+            recbutton.classList.add("active");
+            abfrage = true;
+        }
+    });
 
 
 //Aufnahme
