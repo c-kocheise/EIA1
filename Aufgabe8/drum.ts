@@ -107,3 +107,21 @@ function recbeat (i: number): void   {
         beat.push(i);
     }
 }
+
+    //Funktion PlayButton, PauseButton
+    function playSchleife (b: boolean): void {
+        if (b == true) {      
+            myInterval = setInterval(function (): void  {               
+                if (x < beat.length) {
+                    playSample(beat[x]);
+                    x++;
+                }
+                else {
+                    x = 0;
+                }
+            }, 500 );
+        }
+        else {
+            clearInterval(myInterval);
+        }
+    }
