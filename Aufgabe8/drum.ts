@@ -96,6 +96,10 @@ pauseButton.addEventListener("click", () => {
         }
     });
 
+    trash.addEventListener("click", () => {
+        beat.splice(0, beat.length);
+    });
+    
 
 //Aufnahme
 function recbeat (i: number): void   {
