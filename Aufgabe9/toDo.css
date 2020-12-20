@@ -40,3 +40,16 @@ ul{
     height: 100px;
 }
 
+.Task{
+    padding: 10px;
+    font-size: 20px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    width: 480px;
+    height: 70px;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+
