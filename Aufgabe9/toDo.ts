@@ -23,19 +23,19 @@ function addToHTML() {
     let newCheckbox = document.createElement("input");
     let trashIcon = document.createElement("i");
 
-     // Elemente gleichsetzen
-     inputText.innerHTML = currentElement;
-     newElement.className = "Task";
-     trashIcon.className = "fas fa-trash-alt trash";
-     newCheckbox.type = "checkbox";
-     newCheckbox.className = "checkbox";
+    // Elemente gleichsetzen
+    inputText.innerHTML = currentElement;
+    newElement.className = "Task";
+    trashIcon.className = "fas fa-trash-alt trash";
+    newCheckbox.type = "checkbox";
+    newCheckbox.className = "checkbox";
 
      // Kinder
-     list.appendChild(newElement);
-     newElement.appendChild(newCheckbox);
-     newElement.appendChild(inputText);
-     newElement.appendChild(trashIcon);
-     trashIcon.addEventListener("click", function () {
+    list.appendChild(newElement);
+    newElement.appendChild(newCheckbox);
+    newElement.appendChild(inputText);
+    newElement.appendChild(trashIcon);
+    trashIcon.addEventListener("click", function () {
          newElement.remove();
          index--;
          counter();
