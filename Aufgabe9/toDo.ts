@@ -1,3 +1,5 @@
+namespace Aufgabe9 {
+
 var _this = this;
 
 //Zugriff auf HTML
@@ -61,3 +63,4 @@ input.addEventListener("keypress", function (e) {
         counter();
     }
 });
+}
