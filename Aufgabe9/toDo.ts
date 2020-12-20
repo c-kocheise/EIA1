@@ -1,3 +1,5 @@
+var _this = this;
+
 //Zugriff auf HTML
 let input = document.getElementById("myInput");
 let newElement = document.createElement("li");
@@ -42,3 +44,20 @@ function addToHTML() {
 function clear() {
     document.getElementById("myInput").value = "";
 }
+
+// Counter
+function counter() {
+    document.querySelector("#counter").innerHTML = index + " open tasks";
+}
+counter();
+
+// Counterevent
+input.addEventListener("keypress", function (e) {
+    if (e.code === "Enter") {
+        addToHTML();
+        clear();
+        _this.currentElement = null;
+        index++;
+        counter();
+    }
+});
