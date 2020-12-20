@@ -18,7 +18,7 @@ body{
   }
   h2{
     position: relative;
-    color: #fbfbfb;
+    color: white;
    
   
   }
@@ -58,13 +58,13 @@ body{
     margin: 3px;
     font-size: medium;
     border-radius: 10px 10px;
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid black;
   }
   
   .element{
     position: relative;
     margin: 8px;
-    background-color: #ffffff;
+    background-color: white;
     width: 500px;
     height: 60px;
     border-radius: 10px;
@@ -79,7 +79,7 @@ body{
   .element.checked::before {
     content: '';
     position: absolute;
-    border-color: #000000;
+    border-color: black;
     border-style: solid;
     border-width: 0 2px 2px 0;
     top: 10px;
@@ -102,7 +102,7 @@ body{
   }
   .fa-check{
     position: absolute;
-    color: #000000;
+    color: black;
     left: 5%;
     font-size: 20px;
     padding-right: 20px;
@@ -117,7 +117,7 @@ body{
     position: absolute;
     left: 5%;
     top: 35%;
-    color: #115924;
+    color: #7a814f;
     height: 20px;
     width: 20px;
   
