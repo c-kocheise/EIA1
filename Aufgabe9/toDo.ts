@@ -37,3 +37,8 @@ function addToHTML() {
          counter();
      });
  }
+
+ // Löschfunktion
+function clear() {
+    document.getElementById("myInput").value = "";
+}
