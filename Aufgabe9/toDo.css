@@ -3,21 +3,21 @@ html{height: 100%;
 
 body{
     background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
   h1{
-    color: #8b8b8b;
+    color: white;
     position: relative;
     top: 0;
     font-size: 80px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
   
   
   }
   h2{
     position: relative;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #fbfbfb;
    
   
@@ -57,8 +57,8 @@ body{
     height: 60px;
     margin: 3px;
     font-size: medium;
-    border-radius: 40px 40px;
-    border: 2px solid rgb(76, 76, 76);
+    border-radius: 10px 10px;
+    border: 2px solid rgb(0, 0, 0);
   }
   
   .element{
@@ -71,7 +71,6 @@ body{
     list-style: none;
     padding-left: 10%;
     padding-top: 5%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     cursor: pointer;
     font-size: 20px;
     left: -20px;

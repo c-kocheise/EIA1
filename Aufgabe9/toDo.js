@@ -22,7 +22,7 @@ var Aufgabe9;
         myLi.appendChild(textInput);
         myLi.appendChild(circleIcon);
         myLi.appendChild(doneIcon);
-        //counter of tasks
+        //Zähler
         function amount() {
             document.querySelector("h2").innerHTML = listIndex + " in total";
         }
@@ -42,5 +42,12 @@ var Aufgabe9;
         listIndex++;
         amount();
     }
+    //Mit Enter bedienbar
+    newTask.addEventListener("keypress", function (event) {
+        if (event.key == "Enter") {
+            createElement();
+            newTask.value = " ";
+        }
+    });
 })(Aufgabe9 || (Aufgabe9 = {}));
 //# sourceMappingURL=toDo.js.map
