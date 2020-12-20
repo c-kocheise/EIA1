@@ -3,7 +3,9 @@ var Aufgabe9;
     var trash = document.querySelector(".fas fa-trash-alt");
     var newTask = document.querySelector("#addNewTasks");
     var liElement = document.querySelector(".element");
+    //Index    
     var listIndex = 0;
+    //Funktion    
     function createElement() {
         var myLi = document.createElement("li");
         myLi.className = "element";
@@ -24,28 +26,6 @@ var Aufgabe9;
         function amount() {
             document.querySelector("h2").innerHTML = listIndex + " in total";
         }
-        circleIcon.addEventListener("click", function () {
-            if (doneIcon.classList.contains("hidden")) {
-                doneIcon.classList.remove("hidden");
-            }
-            else {
-                doneIcon.classList.add("hidden");
-            }
-        });
-        trash.addEventListener("click", function () {
-            document.querySelector("#myList").removeChild(myLi);
-            listIndex--;
-            amount();
-        });
-        listIndex++;
-        amount();
     }
-    //mit keypress enter bedienbar
-    newTask.addEventListener("keypress", function (event) {
-        if (event.key == "Enter") {
-            createElement();
-            newTask.value = " ";
-        }
-    });
 })(Aufgabe9 || (Aufgabe9 = {}));
 //# sourceMappingURL=toDo.js.map

@@ -2,9 +2,11 @@ namespace Aufgabe9 {
     const trash: HTMLElement = document.querySelector(".fas fa-trash-alt");
     const newTask: any = document.querySelector("#addNewTasks");
     const liElement: HTMLElement = document.querySelector(".element");
-        
+
+//Index    
     let listIndex: number = 0;
-    
+ 
+//Funktion    
     function createElement (): void {
         let myLi: HTMLElement = document.createElement("li");
         myLi.className = "element";
@@ -27,35 +29,3 @@ namespace Aufgabe9 {
             document.querySelector("h2").innerHTML = listIndex + " in total";
         }
         
-    
-        circleIcon.addEventListener("click", function(): void {
-            if (doneIcon.classList.contains("hidden")) {
-                doneIcon.classList.remove("hidden");
-            }   
-            else { 
-                 doneIcon.classList.add("hidden");
-    
-                }
-       
-        });
-    
-        trash.addEventListener("click", function(): void {
-            document.querySelector("#myList").removeChild(myLi);
-            listIndex--;
-            amount();
-        });
-    
-        listIndex++;
-        amount();
-    
-    }
-    //mit keypress enter bedienbar
-    newTask.addEventListener("keypress", function (event: KeyboardEvent): void {
-        if (event.key == "Enter") {
-            createElement();
-            newTask.value = " ";
-        }
-    
-    });
-    
-    }
