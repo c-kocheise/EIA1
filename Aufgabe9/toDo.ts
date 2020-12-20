@@ -29,3 +29,23 @@ namespace Aufgabe9 {
             document.querySelector("h2").innerHTML = listIndex + " in total";
         }
         
+        circleIcon.addEventListener("click", function(): void {
+            if (doneIcon.classList.contains("hidden")) {
+                doneIcon.classList.remove("hidden");
+            }   
+            else { 
+                 doneIcon.classList.add("hidden");
+    
+                }
+       
+        });
+    
+        trash.addEventListener("click", function(): void {
+            document.querySelector("#myList").removeChild(myLi);
+            listIndex--;
+            amount();
+        });
+    
+        listIndex++;
+        amount();
+}

@@ -26,6 +26,21 @@ var Aufgabe9;
         function amount() {
             document.querySelector("h2").innerHTML = listIndex + " in total";
         }
+        circleIcon.addEventListener("click", function () {
+            if (doneIcon.classList.contains("hidden")) {
+                doneIcon.classList.remove("hidden");
+            }
+            else {
+                doneIcon.classList.add("hidden");
+            }
+        });
+        trash.addEventListener("click", function () {
+            document.querySelector("#myList").removeChild(myLi);
+            listIndex--;
+            amount();
+        });
+        listIndex++;
+        amount();
     }
 })(Aufgabe9 || (Aufgabe9 = {}));
 //# sourceMappingURL=toDo.js.map
