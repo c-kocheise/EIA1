@@ -1,6 +1,6 @@
 namespace Aufgabe9 {
 
-var _this = this;
+let _this = this;
 
 //Zugriff auf HTML
 let input = document.getElementById("myInput");
@@ -43,7 +43,7 @@ function addToHTML() {
  }
 
  // Löschfunktion
-function clear() {
+function clear(): void {
     document.getElementById("myInput").value = "";
 }
 
