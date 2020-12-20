@@ -53,3 +53,29 @@ ul{
 }
 
 
+.checkbox{
+    color: rgb(37, 220, 20);
+    left: -100%;
+    border-radius: 20px;
+    margin: 3%;
+    transform: scale(2);
+}
+
+#myInput{
+    width: 500px;
+    height: 70px; 
+    font-size: 20px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.trash{
+    position: absolute;
+    left: 90%;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.trash:hover {
+    color: rgb(69, 68, 70);
+}
