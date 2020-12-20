@@ -54,7 +54,7 @@ function myFunction(name, value18, valueRel, valueChange, valueGrowth) {
     document.querySelector(".h2_3").innerHTML = Math.round(valueChange) + "%";
     document.querySelector(".h2_4").innerHTML = valueGrowth + "kg CO2";
     //Diagramm
-    document.querySelector(".chart").setAttribute('style', 'height:' + Math.round(value18 / weltweit2018 * 100) + "%");
+    document.querySelector(".chart").setAttribute("style", "height:" + Math.round(value18 / weltweit2018 * 100) + "%");
 }
 //Events
 document.querySelector(".europe").addEventListener("click", myFunction.bind(null, "Europe", europe2018, relEurope, zuEuropeP, zuEuropeZ));
