@@ -1,66 +1,61 @@
 namespace Aufgabe9 {
-
-let _this = this;
-
-//Zugriff auf HTML
-let input = document.getElementById("myInput");
-let newElement = document.createElement("li");
-let trashIcon = document.createElement("i");
-
-
-//Index
-let index = 0;
-
-
-//Funktion
-function addToHTML() {
-    let list = document.getElementById("Task");
-    let currentElement = document.getElementById("myInput").value;
+    const trash: HTMLElement = document.querySelector(".fas fa-trash-alt");
+    const newTask: any = document.querySelector("#addNewTasks");
+    const liElement: HTMLElement = document.querySelector(".element");
+        
+    let listIndex: number = 0;
     
-    // Neues Element
-    let newElement = document.createElement("li");
-    let inputText = document.createElement("label");
-    let newCheckbox = document.createElement("input");
-    let trashIcon = document.createElement("i");
-
-    // Elemente gleichsetzen
-    inputText.innerHTML = currentElement;
-    newElement.className = "Task";
-    trashIcon.className = "fas fa-trash-alt trash";
-    newCheckbox.type = "checkbox";
-    newCheckbox.className = "checkbox";
-
-     // Kinder
-    list.appendChild(newElement);
-    newElement.appendChild(newCheckbox);
-    newElement.appendChild(inputText);
-    newElement.appendChild(trashIcon);
-    trashIcon.addEventListener("click", function () {
-         newElement.remove();
-         index--;
-         counter();
-     });
- }
-
- // Löschfunktion
-function clear(): void {
-    document.getElementById("myInput").value = "";
-}
-
-// Counter
-function counter() {
-    document.querySelector("#counter").innerHTML = index + " open tasks";
-}
-counter();
-
-// Counterevent
-input.addEventListener("keypress", function (e) {
-    if (e.code === "Enter") {
-        addToHTML();
-        clear();
-        _this.currentElement = null;
-        index++;
-        counter();
+    function createElement (): void {
+        let myLi: HTMLElement = document.createElement("li");
+        myLi.className = "element";
+        let trash: HTMLElement = document.createElement("i");
+        trash.className = "fas fa-trash-alt";
+        let textInput: HTMLSpanElement = document.createElement("span");
+        textInput.innerHTML = newTask.value;
+        let circleIcon: HTMLElement = document.createElement("i");
+        circleIcon.className = "fal fa-circle";
+        let doneIcon: HTMLElement = document.createElement("i");
+        doneIcon.className = "fas fa-check hidden";
+        
+        document.querySelector("#myList").appendChild(myLi);
+        myLi.appendChild(trash);
+        myLi.appendChild(textInput);
+        myLi.appendChild(circleIcon);
+        myLi.appendChild(doneIcon);
+         //counter of tasks
+        function amount(): void {
+            document.querySelector("h2").innerHTML = listIndex + " in total";
+        }
+        
+    
+        circleIcon.addEventListener("click", function(): void {
+            if (doneIcon.classList.contains("hidden")) {
+                doneIcon.classList.remove("hidden");
+            }   
+            else { 
+                 doneIcon.classList.add("hidden");
+    
+                }
+       
+        });
+    
+        trash.addEventListener("click", function(): void {
+            document.querySelector("#myList").removeChild(myLi);
+            listIndex--;
+            amount();
+        });
+    
+        listIndex++;
+        amount();
+    
     }
-});
-}
+    //mit keypress enter bedienbar
+    newTask.addEventListener("keypress", function (event: KeyboardEvent): void {
+        if (event.key == "Enter") {
+            createElement();
+            newTask.value = " ";
+        }
+    
+    });
+    
+    }

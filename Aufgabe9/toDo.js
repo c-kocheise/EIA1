@@ -1,55 +1,50 @@
 var Aufgabe9;
 (function (Aufgabe9) {
-    var _this = this;
-    //Zugriff auf HTML
-    var input = document.getElementById("myInput");
-    var newElement = document.createElement("li");
-    var trashIcon = document.createElement("i");
-    //Index
-    var index = 0;
-    //Funktion
-    function addToHTML() {
-        var list = document.getElementById("Task");
-        var currentElement = document.getElementById("myInput").value;
-        // Neues Element
-        var newElement = document.createElement("li");
-        var inputText = document.createElement("label");
-        var newCheckbox = document.createElement("input");
-        var trashIcon = document.createElement("i");
-        // Elemente gleichsetzen
-        inputText.innerHTML = currentElement;
-        newElement.className = "Task";
-        trashIcon.className = "fas fa-trash-alt trash";
-        newCheckbox.type = "checkbox";
-        newCheckbox.className = "checkbox";
-        // Kinder
-        list.appendChild(newElement);
-        newElement.appendChild(newCheckbox);
-        newElement.appendChild(inputText);
-        newElement.appendChild(trashIcon);
-        trashIcon.addEventListener("click", function () {
-            newElement.remove();
-            index--;
-            counter();
+    var trash = document.querySelector(".fas fa-trash-alt");
+    var newTask = document.querySelector("#addNewTasks");
+    var liElement = document.querySelector(".element");
+    var listIndex = 0;
+    function createElement() {
+        var myLi = document.createElement("li");
+        myLi.className = "element";
+        var trash = document.createElement("i");
+        trash.className = "fas fa-trash-alt";
+        var textInput = document.createElement("span");
+        textInput.innerHTML = newTask.value;
+        var circleIcon = document.createElement("i");
+        circleIcon.className = "fal fa-circle";
+        var doneIcon = document.createElement("i");
+        doneIcon.className = "fas fa-check hidden";
+        document.querySelector("#myList").appendChild(myLi);
+        myLi.appendChild(trash);
+        myLi.appendChild(textInput);
+        myLi.appendChild(circleIcon);
+        myLi.appendChild(doneIcon);
+        //counter of tasks
+        function amount() {
+            document.querySelector("h2").innerHTML = listIndex + " in total";
+        }
+        circleIcon.addEventListener("click", function () {
+            if (doneIcon.classList.contains("hidden")) {
+                doneIcon.classList.remove("hidden");
+            }
+            else {
+                doneIcon.classList.add("hidden");
+            }
         });
+        trash.addEventListener("click", function () {
+            document.querySelector("#myList").removeChild(myLi);
+            listIndex--;
+            amount();
+        });
+        listIndex++;
+        amount();
     }
-    // Löschfunktion
-    function clear() {
-        document.getElementById("myInput").value = "";
-    }
-    // Counter
-    function counter() {
-        document.querySelector("#counter").innerHTML = index + " open tasks";
-    }
-    counter();
-    // Counterevent
-    input.addEventListener("keypress", function (e) {
-        if (e.code === "Enter") {
-            addToHTML();
-            clear();
-            _this.currentElement = null;
-            index++;
-            counter();
+    //mit keypress enter bedienbar
+    newTask.addEventListener("keypress", function (event) {
+        if (event.key == "Enter") {
+            createElement();
+            newTask.value = " ";
         }
     });
 })(Aufgabe9 || (Aufgabe9 = {}));
