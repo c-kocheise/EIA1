@@ -1,3 +1,5 @@
+namespace Aufgabe8 {
+
 //Drumpad Samples
 
     let drumPad = [];
@@ -143,3 +145,4 @@
             clearInterval(myInterval);
         }
     }
+}
